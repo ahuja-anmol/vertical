@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+          margin:0;
+          padding:0;
+        }
+        body{
+            height: 100vh;
+            width : 100vw;
+        }
+        #screen-1 {
+            background-image: url(https://centralindia1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fonebanc-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!VZHwp1NTMk6B8VOdEsj93cyTLhetXp9NhYNAkcd3dppxSDWC_6uQT5nXg6sH6rIO%2Fitems%2F012R4W6UOWURVADCYNJZGIPIJS4VOD6I4P%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvb25lYmFuYy1teS5zaGFyZXBvaW50LmNvbUAxNzc5NTczYi1iZWE1LTRkMTAtODJjMC1kOTRkNmE5MjQxN2YiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ0ODE4NDAwIiwiZXhwIjoiMTY0NDg0MDAwMCIsImVuZHBvaW50dXJsIjoiMmxEdWxveG5TejUybHA5bzZMdUNCcnQzalNNeWIvSkFpMUtuK3VwUkg2az0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6IllUZG1NRGt4TlRVdE5UTTFNeTAwWlRNeUxUZ3haakV0TlRNNVpERXlZemhtWkdSayIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8YW51ZGVlcC5tdWt0aW51dGFsYXBhdGlAb25lYmFuYy5haSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAxOTUzYzg1YzFAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiIzNzc5MzJlYy0wMTRiLTQyODYtOWZiOS0yY2ZiMTdlNmNlYmMiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6IjEyMi4xODYuMzAuMzQifQ.MDVGcVNZZXZheHRKWWpzMXFGMm5yanJqeGpBclRPNmZPbjBIZGZIdDgrWT0&cTag=%22c%3A%7B016AA4D6-0D8B-4C4E-87A1-32E55C3F238F%7D%2C1%22&encodeFailures=1&width=1920&height=893&srcWidth=&srcHeight=   );
+            
+        }
+        #screen-2 {
+            background-image: url(https://centralindia1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fonebanc-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!VZHwp1NTMk6B8VOdEsj93cyTLhetXp9NhYNAkcd3dppxSDWC_6uQT5nXg6sH6rIO%2Fitems%2F012R4W6UOK22O57CRUF5AKHGXCW6TXWRCT%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvb25lYmFuYy1teS5zaGFyZXBvaW50LmNvbUAxNzc5NTczYi1iZWE1LTRkMTAtODJjMC1kOTRkNmE5MjQxN2YiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ0ODE4NDAwIiwiZXhwIjoiMTY0NDg0MDAwMCIsImVuZHBvaW50dXJsIjoiMmxEdWxveG5TejUybHA5bzZMdUNCcnQzalNNeWIvSkFpMUtuK3VwUkg2az0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6IllUZG1NRGt4TlRVdE5UTTFNeTAwWlRNeUxUZ3haakV0TlRNNVpERXlZemhtWkdSayIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8YW51ZGVlcC5tdWt0aW51dGFsYXBhdGlAb25lYmFuYy5haSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAxOTUzYzg1YzFAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiIzNzc5MzJlYy0wMTRiLTQyODYtOWZiOS0yY2ZiMTdlNmNlYmMiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6IjEyMi4xODYuMzAuMzQifQ.MDVGcVNZZXZheHRKWWpzMXFGMm5yanJqeGpBclRPNmZPbjBIZGZIdDgrWT0&cTag=%22c%3A%7BDF9DD6CA-348A-402F-A39A-E2B7A77B4453%7D%2C1%22&encodeFailures=1&width=1920&height=893&srcWidth=&srcHeight=);
+        }
+        #screen-3 {
+            background-image: url(https://centralindia1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fonebanc-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!VZHwp1NTMk6B8VOdEsj93cyTLhetXp9NhYNAkcd3dppxSDWC_6uQT5nXg6sH6rIO%2Fitems%2F012R4W6UIET3MWLSHSD5DJ7LDCVSM3J52Q%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvb25lYmFuYy1teS5zaGFyZXBvaW50LmNvbUAxNzc5NTczYi1iZWE1LTRkMTAtODJjMC1kOTRkNmE5MjQxN2YiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ0ODE4NDAwIiwiZXhwIjoiMTY0NDg0MDAwMCIsImVuZHBvaW50dXJsIjoiMmxEdWxveG5TejUybHA5bzZMdUNCcnQzalNNeWIvSkFpMUtuK3VwUkg2az0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6IllUZG1NRGt4TlRVdE5UTTFNeTAwWlRNeUxUZ3haakV0TlRNNVpERXlZemhtWkdSayIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8YW51ZGVlcC5tdWt0aW51dGFsYXBhdGlAb25lYmFuYy5haSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAxOTUzYzg1YzFAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiIzNzc5MzJlYy0wMTRiLTQyODYtOWZiOS0yY2ZiMTdlNmNlYmMiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6IjEyMi4xODYuMzAuMzQifQ.MDVGcVNZZXZheHRKWWpzMXFGMm5yanJqeGpBclRPNmZPbjBIZGZIdDgrWT0&cTag=%22c%3A%7B65D99E04-F2C8-461F-9FAC-62AC99B4F750%7D%2C1%22&encodeFailures=1&width=1920&height=893&srcWidth=&srcHeight=);
+        }
+        #screen-4 {
+            background-image: url(https://centralindia1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fonebanc-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!VZHwp1NTMk6B8VOdEsj93cyTLhetXp9NhYNAkcd3dppxSDWC_6uQT5nXg6sH6rIO%2Fitems%2F012R4W6UM6XN2J6XQOSFDKMEL5PZTDHIX5%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvb25lYmFuYy1teS5zaGFyZXBvaW50LmNvbUAxNzc5NTczYi1iZWE1LTRkMTAtODJjMC1kOTRkNmE5MjQxN2YiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjQ0ODE4NDAwIiwiZXhwIjoiMTY0NDg0MDAwMCIsImVuZHBvaW50dXJsIjoiMmxEdWxveG5TejUybHA5bzZMdUNCcnQzalNNeWIvSkFpMUtuK3VwUkg2az0iLCJlbmRwb2ludHVybExlbmd0aCI6IjExNyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6IllUZG1NRGt4TlRVdE5UTTFNeTAwWlRNeUxUZ3haakV0TlRNNVpERXlZemhtWkdSayIsInNpZ25pbl9zdGF0ZSI6IltcImttc2lcIl0iLCJuYW1laWQiOiIwIy5mfG1lbWJlcnNoaXB8YW51ZGVlcC5tdWt0aW51dGFsYXBhdGlAb25lYmFuYy5haSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAxOTUzYzg1YzFAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiIzNzc5MzJlYy0wMTRiLTQyODYtOWZiOS0yY2ZiMTdlNmNlYmMiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6IjEyMi4xODYuMzAuMzQifQ.MDVGcVNZZXZheHRKWWpzMXFGMm5yanJqeGpBclRPNmZPbjBIZGZIdDgrWT0&cTag=%22c%3A%7B9F74BB9E-0E5E-4691-A611-7D7E6633A2FD%7D%2C1%22&encodeFailures=1&width=1920&height=893&srcWidth=&srcHeight=);
+        }
+        .screen {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .top{
+            background-attachment : fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen " id="screen-1"></div>
+    <div class="screen" id="screen-2"></div>
+    <div class="screen" id="screen-3"></div>
+    <div class="screen" id="screen-4"></div>
+<script type="text/javascript">
+    function handleScroll() {
+        var screens = document.getElementsByClassName("screen");
+        for (var i = 0; i < screens.length; i++) {
+            var screen2 = screens.item(i);
+
+            var screen2Ypos = screen2.getBoundingClientRect().y;
+
+            if (screen2Ypos <= 0) {
+                screen2.classList.add("top");
+            }
+            else {
+                screen2.classList.remove("top");
+
+            }
+        }
+        
+    }
+    window.addEventListener("scroll", handleScroll);
+</script>
+</body>
+</html>
